@@ -1,9 +1,9 @@
 // Nav.js
-import { NavButton } from '../common/NavButton';
-import { Cart } from '../views/Cart';
-import { Home } from '../views/Home';
-import { RoomList } from '../views/RoomList';
-import { TreatmentList } from '../views/TreatmentList';
+import { NavButton } from '../common/NavButton.js';
+import { Cart } from '../views/Cart.js';
+import { Home } from '../views/Home.js';
+import { RoomList } from '../views/RoomList.js';
+import { TreatmentList } from '../views/TreatmentList.js';
 
 const navItems = [
   { name: '<i class="fa-solid fa-house fa-xl"></i>', component: Home },
