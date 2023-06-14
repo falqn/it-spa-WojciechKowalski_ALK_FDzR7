@@ -1,7 +1,7 @@
 // it-spa.js
 // import 'bootstrap/dist/css/bootstrap.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.js';
-import './it-spa.scss';
+// import './it-spa.scss';
 
 import { Home } from './views/Home.js';
 import { Nav } from './navigation/Nav.js';
