@@ -1,8 +1,8 @@
 // RoomList.js
 
-import { RoomDetails } from './RoomDetails';
-import { NavButton } from '../common/NavButton';
-import { cartManager } from '../cart/cart-manager';
+import { RoomDetails } from './RoomDetails.js';
+import { NavButton } from '../common/NavButton.js';
+import { cartManager } from '../cart/cart-manager.js';
 
 export function RoomList() {
 
