@@ -3,11 +3,11 @@
 // import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './it-spa.scss';
 
-import { Home } from './views/Home';
-import { Nav } from './navigation/Nav';
-import { NavDate } from './navigation/NavDate';
-import { CartPreview } from './views/CartPreview';
-import { Header } from './navigation/Header';
+import { Home } from './views/Home.js';
+import { Nav } from './navigation/Nav.js';
+import { NavDate } from './navigation/NavDate.js';
+import { CartPreview } from './views/CartPreview.js';
+import { Header } from './navigation/Header.js';
 
 const main = document.querySelector('main');
 
