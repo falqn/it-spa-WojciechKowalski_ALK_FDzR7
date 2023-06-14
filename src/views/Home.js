@@ -81,8 +81,17 @@ export function Home() {
 
   const zabiegi1 = section.querySelector('#zabiegi1');
   const pokoje1 = section.querySelector('#pokoje1');
-  zabiegi1.src = require('../assets/zabiegi1.jpg');
-  pokoje1.src = require('../assets/pokoje1.jpg');
+//   zabiegi1.src = require('../assets/zabiegi1.jpg');
+//   pokoje1.src = require('../assets/pokoje1.jpg');
+
+const zabiegi1Img = new Image();
+zabiegi1Img.src = 'src/assets/zabiegi1.jpg';
+zabiegi1.src = zabiegi1Img.src;
+
+const pokoje1Img = new Image();
+pokoje1Img.src = 'src/assets/pokoje1.jpg';
+pokoje1.src = pokoje1Img.src;
+  
 
   zabiegi1.onclick = function() {
     const main = document.querySelector('main');
