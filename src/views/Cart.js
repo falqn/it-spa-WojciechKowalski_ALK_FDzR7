@@ -1,7 +1,7 @@
 // Cart.js
-import { cartManager } from '../cart/cart-manager';
-import { NavButton } from '../common/NavButton';
-import { getStayDays } from '../navigation/NavDate';
+import { cartManager } from '../cart/cart-manager.js';
+import { NavButton } from '../common/NavButton.js';
+import { getStayDays } from '../navigation/NavDate.js';
 
 export function Cart() {
 
