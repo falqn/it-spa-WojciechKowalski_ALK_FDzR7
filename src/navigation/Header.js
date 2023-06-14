@@ -1,7 +1,7 @@
 // Header.js
-import { NavButton } from '../common/NavButton';
-import { Registration } from '../views/Registration';
-import { Home } from '../views/Home';
+import { NavButton } from '../common/NavButton.js';
+import { Registration } from '../views/Registration.js';
+import { Home } from '../views/Home.js';
 
 
 export function Header() {
