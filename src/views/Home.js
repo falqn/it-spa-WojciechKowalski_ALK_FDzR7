@@ -1,5 +1,5 @@
-import { RoomList } from './RoomList';
-import { TreatmentList } from './TreatmentList';
+import { RoomList } from './RoomList.js';
+import { TreatmentList } from './TreatmentList.js';
 
 // Home.js
 export function Home() {
