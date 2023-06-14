@@ -1,5 +1,5 @@
 // CartPreview.js
-import { cartManager } from '../cart/cart-manager';
+import { cartManager } from '../cart/cart-manager.js';
 
 export function CartPreview() {
 
