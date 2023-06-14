@@ -1,0 +1,138 @@
+html, body {
+	 height: 100%;
+	 padding: 0;
+	 max-width: 80%;
+	 margin: 0 auto;
+	 background: linear-gradient(0deg, #e4f2f7 0%, lightblue 100%);
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
+ main h2 {
+	 margin: 1rem 0;
+}
+ main h3, main h4, main h5, main h6 {
+	 margin: 0.5rem 0;
+}
+ main ul {
+	 list-style: none;
+	 padding: 0;
+}
+ main ul li {
+	 background-color: #00b0d3;
+	 border: 2px solid #00a1ce;
+	 color: white;
+	 padding: 1rem;
+	 border-radius: 0.3rem;
+	 text-shadow: 0 2px 2px gray;
+}
+ main ul li button, main ul li .btn {
+	 background: transparent;
+	 border: 1px solid #fff;
+	 color: #fff;
+}
+ main ul li + li {
+	 margin-top: 2rem;
+}
+ main ul.treatments-list {
+	 column-count: 2;
+	 column-gap: 2rem;
+}
+ main article {
+	 background: repeating-linear-gradient(45deg, #93e8ff, #93e8ff 10px, #20daff 10px, #20daff 20px);
+	 box-shadow: #00a1ce 576e 0 2px 8px 2px;
+	 margin: 2em 1em;
+	 border: 2px solid #00a1ce;
+	 padding: 1rem;
+	 border-radius: 0.3rem;
+}
+ main article h3 {
+	 text-shadow: 0 2px 2px gray;
+	 background: #00a1ce;
+	 color: white;
+	 margin: 0;
+	 padding: 1rem;
+	 border-radius: 0.3rem;
+}
+ main article h5 {
+	 text-shadow: 0 0px 6px black;
+	 color: white;
+	 margin: 0;
+	 padding: 1rem;
+	 border-radius: 0.3rem;
+}
+ main article p {
+	 color: #004b60;
+	 margin-bottom: 8px;
+	 margin-left: 8px;
+}
+ header {
+	 padding: 12px;
+	 background-color: rgba(255, 255, 255, 0.75);
+}
+ .navbar {
+	 background-color: white;
+	 justify-content: flex-start;
+	 padding: 1rem;
+}
+ .navbar > * {
+	 margin-right: 2rem;
+}
+ .navbar > :last-child {
+	 margin-left: auto;
+}
+ .navbar > :first-child {
+	 margin-left: 2rem;
+}
+ .nav-date {
+	 background-color: rgba(255, 255, 255, 0.75);
+}
+ footer {
+	 display: flex;
+	 align-items: center;
+	 justify-content: flex-end;
+}
+ footer a {
+	 color: darkgray;
+}
+ footer a:hover {
+	 color: black;
+}
+ footer > * + * {
+	 margin-left: 1rem;
+}
+ footer p {
+	 color: #004b60;
+	 margin-bottom: 8px;
+	 margin-top: 8px;
+}
+ .cartPreview {
+	 background-color: #0dcaf0 f2;
+	 border-radius: 0.3rem;
+	 padding-top: 10px;
+	 padding-left: 15px;
+	 padding-right: 15px;
+	 z-index: 1000;
+	 max-width: 500px;
+	 position: fixed;
+	 top: 14%;
+	 right: 2%;
+}
+ .cartPreview .table-narrow {
+	 font-size: 0.9em;
+	 letter-spacing: -0.01em;
+}
+ .cartPreview .table-narrow td {
+	 padding-right: 10px;
+}
+ .table strong {
+	 padding-left: 0px;
+}
+ .home-image {
+	 width: 110%;
+	 border-radius: 20%;
+	 cursor: pointer;
+	 transition: opacity 0.2s ease-in-out;
+}
+ .home-image:hover {
+	 opacity: 0.7;
+}
