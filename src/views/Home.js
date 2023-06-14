@@ -85,11 +85,11 @@ export function Home() {
 //   pokoje1.src = require('../assets/pokoje1.jpg');
 
 const zabiegi1Img = new Image();
-zabiegi1Img.src = 'src/assets/zabiegi1.jpg';
+zabiegi1Img.src = 'https://falqn.github.io/it-spa-WojciechKowalski_ALK_FDzR7/src/assets/zabiegi1.jpg';
 zabiegi1.src = zabiegi1Img.src;
 
 const pokoje1Img = new Image();
-pokoje1Img.src = 'src/assets/pokoje1.jpg';
+pokoje1Img.src = 'https://falqn.github.io/it-spa-WojciechKowalski_ALK_FDzR7/src/assets/pokoje1.jpg';
 pokoje1.src = pokoje1Img.src;
   
 
