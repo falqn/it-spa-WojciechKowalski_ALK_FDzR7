@@ -1,7 +1,7 @@
 // TreatmentDetails.js
-import { NavButton } from '../common/NavButton';
-import { TreatmentList } from '../views/TreatmentList';
-import { cartManager } from '../cart/cart-manager';
+import { NavButton } from '../common/NavButton.js';
+import { TreatmentList } from '../views/TreatmentList.js';
+import { cartManager } from '../cart/cart-manager.js';
 
 export function TreatmentDetails(treatmentId) {
   const section = document.createElement('section');
