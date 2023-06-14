@@ -603,11 +603,7 @@ function TreatmentList() {
   });
   return section;
 }
-},{"./TreatmentDetails":"src/views/TreatmentDetails.js","../common/NavButton":"src/common/NavButton.js","../cart/cart-manager":"src/cart/cart-manager.js"}],"src/assets/zabiegi1.jpg":[function(require,module,exports) {
-module.exports = "/zabiegi1.221135df.jpg";
-},{}],"src/assets/pokoje1.jpg":[function(require,module,exports) {
-module.exports = "/pokoje1.37c33a8b.jpg";
-},{}],"src/views/Home.js":[function(require,module,exports) {
+},{"./TreatmentDetails":"src/views/TreatmentDetails.js","../common/NavButton":"src/common/NavButton.js","../cart/cart-manager":"src/cart/cart-manager.js"}],"src/views/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -622,8 +618,18 @@ function Home() {
   section.innerHTML = "\n    <div class=\"jumbotron\">\n      <div class=\"heading col-12\">\n        <h2 class=\"text-center\"><br>Zobacz co Ci\u0119 u nas czeka...</h2>\n        <br>\n      </div>\n    <hr />\n    <div class=\"row text-center\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-sm-4\">\n            <img id=\"zabiegi1\" class=\"home-image shadow\" alt=\"zabiegi\">\n          </div>\n          <div class=\"col-lg-8 col-sm-8\">\n            <blockquote class=\"blockquote text-center\">\n              <p>Odkryj najwspanialsze <strong>zabiegi</strong> jakie mo\u017Cesz sobie wyobrazi\u0107. Znane Ci przyrz\u0105dy i akcesoria programisty dostarcz\u0105 Ci niezapomnianych wra\u017Ce\u0144, a chwile sp\u0119dzone w naszych gabinetach zabiegowych na d\u0142ugo pozostan\u0105 w Twojej pami\u0119ci!</p>\n            </blockquote>\n            <footer class=\"blockquote-footer\">\n              <cite>Maurycy Pompka, g\u0142\xF3wny fizjorelaksator</cite>\n            </footer>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-sm-4\">\n            <img id=\"pokoje1\" class=\"home-image shadow\" alt=\"pokoje\">\n          </div>\n          <div class=\"col-lg-8 col-sm-8\">\n            <blockquote class=\"blockquote text-center\">\n              <p>Przestronne i pe\u0142ne udogodnie\u0144 <strong>pokoje</strong> pozwol\u0105 Ci wypocz\u0105\u0107 w spos\xF3b jakiego jeszcze nie zna\u0142e\u015B! \u0141\xF3\u017Cka typu king-size, panoramiczne okna, balkony z zestawem wypoczynkowym - sp\xF3buj a zostaniesz na d\u0142u\u017Cej.</p>\n            </blockquote>\n            <footer class=\"blockquote-footer\">\n              <cite>Ernest Golibroda, g\u0142\xF3wny komfortmaker</cite>\n            </footer>\n          </div>\n        </div>\n      </div>\n    </div>\n    <br>\n    <div class=\"jumbotron\">\n      <hr />\n      <div class=\"row text-center\">\n        <div class=\"col-lg-3\">\n          <div class=\"resource\">\n            <i class=\"fa-solid fa-star fa-2x\"></i>\n            <h2>Niskie ceny</h2>\n            <p>U nas nie przep\u0142acisz, wyj\u0105tkowa jako\u015B\u0107 us\u0142ug w cenach nie do przebicia!</p>\n          </div>\n        </div>\n        <div class=\"col-lg-3\">\n          <div class=\"resource\">\n            <i class=\"fa-solid fa-star fa-2x\"></i>\n            <h2>Kuchnia</h2>\n            <p>Zachwy\u0107 si\u0119 potrawami jakie serwuj\u0105 nasi kuchmistrzowie. Smacznie i zdrowo!</p>\n          </div>\t\n        </div>\n        <div class=\"col-lg-3\">\n          <div class=\"resource\">\n            <i class=\"fa-solid fa-star fa-2x\"></i>\n            <h2>Atmosfera</h2>\n            <p>O ka\u017Cdej porzed dnia i nocy mo\u017Cesz liczy\u0107 na nasz\u0105 pomoc, opiek\u0119, dyskrecj\u0119 i \u017Cyczliwo\u015B\u0107!</p>\n          </div>\n        </div>\n        <div class=\"col-lg-3\">\n          <div class=\"resource\">\n            <i class=\"fa-solid fa-star fa-2x\"></i>\n            <h2>Dojazd</h2>\n            <p>\u015Awietna lokalizacja tu\u017C przy w\u0119\u017Ale \"Relaksowo Wielkie\" na autostradzie A2 - szybko dotrzesz!</p>\n          </div>\n      </div>\n    </div>\t\n  ";
   var zabiegi1 = section.querySelector('#zabiegi1');
   var pokoje1 = section.querySelector('#pokoje1');
-  zabiegi1.src = require('../assets/zabiegi1.jpg');
-  pokoje1.src = require('../assets/pokoje1.jpg');
+
+  // zabiegi1.src = require('../assets/zabiegi1.jpg');
+  // pokoje1.src = require('../assets/pokoje1.jpg');
+  //////////////////////////////////////////////////////////////////
+  var zabiegi1Img = new Image();
+  zabiegi1Img.src = 'https://e-map.pl/temp/zabiegi1.jpg';
+  zabiegi1.src = zabiegi1Img.src;
+  var pokoje1Img = new Image();
+  pokoje1Img.src = 'https://e-map.pl/temp/pokoje1.jpg';
+  pokoje1.src = pokoje1Img.src;
+  ////////////////////////////////////////////////////////////////
+
   zabiegi1.onclick = function () {
     var main = document.querySelector('main');
     main.innerHTML = '';
@@ -636,7 +642,7 @@ function Home() {
   };
   return section;
 }
-},{"./RoomList":"src/views/RoomList.js","./TreatmentList":"src/views/TreatmentList.js","../assets/zabiegi1.jpg":"src/assets/zabiegi1.jpg","../assets/pokoje1.jpg":"src/assets/pokoje1.jpg"}],"src/views/Cart.js":[function(require,module,exports) {
+},{"./RoomList":"src/views/RoomList.js","./TreatmentList":"src/views/TreatmentList.js"}],"src/views/Cart.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -999,7 +1005,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53432" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56417" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
