@@ -1,5 +1,5 @@
 // Registration.js
-import { Home } from '../views/Home';
+import { Home } from '../views/Home.js';
 
 export function Registration() {
   const section = document.createElement('section');
