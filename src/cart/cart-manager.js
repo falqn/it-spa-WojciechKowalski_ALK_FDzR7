@@ -1,5 +1,5 @@
 // cart-manager.js
-import { getStayDays } from '../navigation/NavDate';
+import { getStayDays } from '../navigation/NavDate.js';
 
 const key = 'it-spa-cart';
 
